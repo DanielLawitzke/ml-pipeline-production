@@ -1,7 +1,7 @@
 import requests
 
 # URL zur deployed API (später ersetzen mit echter URL!)
-url = "https://your-app-name.onrender.com/predict"
+url = "https://ml-pipeline-production.onrender.com/predict"
 
 data = {
     "age": 52,
