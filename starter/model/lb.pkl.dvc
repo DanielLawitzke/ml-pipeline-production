@@ -1,0 +1,5 @@
+outs:
+- md5: 074ba4ebad66db96ead9defa7bd4f596
+  size: 359
+  hash: md5
+  path: lb.pkl
