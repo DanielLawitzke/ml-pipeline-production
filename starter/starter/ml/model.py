@@ -18,17 +18,12 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
     # RandomForest mit vernünftigen Default-Parametern
-    model = RandomForestClassifier(
-        n_estimators=100,
-        max_depth=10,
-        random_state=42
-    )
-    
+    model = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42)
+
     # Modell trainieren
     model.fit(X_train, y_train)
-    
-    return model
 
+    return model
 
 
 def compute_model_metrics(y, preds):
@@ -54,7 +49,7 @@ def compute_model_metrics(y, preds):
 
 
 def inference(model, X):
-    """ Run model inferences and return the predictions.
+    """Run model inferences and return the predictions.
 
     Inputs
     ------
@@ -67,6 +62,6 @@ def inference(model, X):
     preds : np.ndarray
         Predictions from the model.
     """
-    
+
     preds = model.predict(X)
     return preds
