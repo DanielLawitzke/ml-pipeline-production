@@ -32,6 +32,12 @@ jobs:
       run: |
         cd starter
         flake8 starter/ main.py test_api.py --exclude=__pycache__,.ipynb_checkpoints
+        
+    # Because using local DVC
+    - name: Train model for testing
+      run: |
+        cd starter/starter
+        python train_model.py
     
     # Run all tests
     - name: Run pytest
